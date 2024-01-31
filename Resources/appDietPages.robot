@@ -1,6 +1,6 @@
 *** Settings ***
 Library    AppiumLibrary
-Variables  ../Resources/locator.yaml
+Variables  ../Resources/appDietLocator.yaml
 
 *** Keywords ***
 Start Session Apps
@@ -9,22 +9,20 @@ Start Session Apps
     ...	                platformVersion=11.0
     ...                 deviceName=emulator-5554
     ...                 appPackage=com.fghilmany.dietmealapp
-    ...                 appActivity=com.fghilmany.dietmealapp.ui.main.MainActivity  
+    ...                 appActivity=com.fghilmany.dietmealapp.ui.main.MainActivity 
+    ...                 automationName=UiAutomator2
+    ...                 autoGrantPermissions=true
+    ...                 noReset=true
+    Sleep               1  
 
-Tap Accessibility
-   Tap                 ${accessibility}
-   
-Tap Accessibility Node Provider
-    Tap                ${accessibility_node_provider}
+User Input Welcome Data  
+    Input Text    ${homePageNameField}    MySkill
+    Input Text    ${homePageWeightField}    70
+    Input Text    ${homePageHeightField}    180
+    Tap           ${homePageGenderMaleButton}
 
-Tap Accessibility Node Querying
-    Tap                ${accessibility_node_querying}
-
-Tap Accessibility Service
-    Tap                ${accessibility_service}
-
-Tap Custom View
-    Tap                ${custom_view}    
+User Tap Next Button
+    Click Element    ${homePageNextButton}
 
 Close Session Apps
     Capture Page Screenshot
@@ -32,4 +30,4 @@ Close Session Apps
 
 Close Apps
     Capture Page Screenshot
-    Quit Application
+    Close Application

@@ -38,4 +38,4 @@ Close Session Apps
 
 Close Apps
     Capture Page Screenshot
-    Quit Application
+    Close Application 

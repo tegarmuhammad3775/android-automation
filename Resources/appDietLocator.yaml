@@ -3,4 +3,4 @@
  homePageHeightField : id=com.fghilmany.dietmealapp:id/et_height
  homePageGenderMaleButton : id=com.fghilmany.dietmealapp:id/rb_male
  homePageGenderFemaleButton : id=com.fghilmany.dietmealapp:id/rb_female
- homePageNextButton : id=com.fghilmany.dietmealapp:id/bt_next
+ homePageNextButton : //android.widget.Button[@resource-id="com.fghilmany.dietmealapp:id/bt_next"]
