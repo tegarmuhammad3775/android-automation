@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-01-31T15:55:05.646193" rpa="false" schemaversion="5">
+<suite id="s1" name="appDemosStep" source="E:\[MySkill - Quality Assurance]\Latihan\Robot Framework\myskill-robotframework-mobile\Step\appDemosStep.robot">
+<kw name="Start Session Apps" owner="appDemosPages" type="SETUP">
+<kw name="Set Appium Timeout" owner="AppiumLibrary">
+<arg>10</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="PASS" start="2024-01-31T15:55:05.944192" elapsed="0.000000"/>
+</kw>
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2024-01-31T15:55:10.083865" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001CD5678D280&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg time="2024-01-31T15:55:14.149912" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001CD5678D730&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg time="2024-01-31T15:55:18.219444" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001CD5678E0C0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2024-01-31T15:55:22.302332" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2024-01-31T15:55:22.302332" elapsed="0.008000">No application is open</status>
+</kw>
+<msg time="2024-01-31T15:55:22.311333" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-01-31T15:55:22.312332" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4273): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001CD5678EA50&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
+<arg>http://localhost:4273/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>appPackage=io.appium.android.apis</arg>
+<arg>appActivity=io.appium.android.apis.ApiDemos</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>noReset=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2024-01-31T15:55:05.944192" elapsed="16.371141">MaxRetryError: HTTPConnectionPool(host='localhost', port=4273): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001CD5678EA50&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-01-31T15:55:22.315333" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-01-31T15:55:05.943194" elapsed="16.373139">MaxRetryError: HTTPConnectionPool(host='localhost', port=4273): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001CD5678EA50&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</status>
+</kw>
+<test id="s1-t1" name="As a user i want to open Demos app" line="10">
+<status status="FAIL" start="2024-01-31T15:55:22.316333" elapsed="0.000000">Parent suite setup failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=4273): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001CD5678EA50&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</status>
+</test>
+<test id="s1-t2" name="As a user i want to open Accessibility Node Provider" line="15">
+<status status="FAIL" start="2024-01-31T15:55:22.318335" elapsed="0.002002">Parent suite setup failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=4273): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001CD5678EA50&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</status>
+</test>
+<kw name="Close Apps" owner="appDemosPages" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2024-01-31T15:55:22.324342" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2024-01-31T15:55:22.324342" elapsed="0.001995">No application is open</status>
+</kw>
+<msg time="2024-01-31T15:55:22.327335" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-01-31T15:55:22.329336" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2024-01-31T15:55:22.323337" elapsed="0.005999">No application is open</status>
+</kw>
+<kw name="Quit Application" owner="AppiumLibrary">
+<msg time="2024-01-31T15:55:22.330337" level="WARN">Keyword 'AppiumLibrary.Quit Application' is deprecated. in selenium v4, check `Close Application` keyword.</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2024-01-31T15:55:22.331335" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2024-01-31T15:55:22.331335" elapsed="0.000999">No application is open</status>
+</kw>
+<msg time="2024-01-31T15:55:22.333334" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-01-31T15:55:22.334334" level="FAIL">No application is open</msg>
+<doc>*DEPRECATED!!* in selenium v4, check `Close Application` keyword.</doc>
+<status status="FAIL" start="2024-01-31T15:55:22.330337" elapsed="0.004997">No application is open</status>
+</kw>
+<status status="FAIL" start="2024-01-31T15:55:22.323337" elapsed="0.011997">Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</kw>
+<status status="FAIL" start="2024-01-31T15:55:05.648192" elapsed="16.687142">Suite setup failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=4273): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001CD5678EA50&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+Also suite teardown failed:
+Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="appDemosStep">appDemosStep</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-01-31T15:55:10.083865" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001CD5678D280&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg time="2024-01-31T15:55:14.149912" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001CD5678D730&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg time="2024-01-31T15:55:18.219444" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001CD5678E0C0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg time="2024-01-31T15:55:22.311333" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-01-31T15:55:22.327335" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-01-31T15:55:22.330337" level="WARN">Keyword 'AppiumLibrary.Quit Application' is deprecated. in selenium v4, check `Close Application` keyword.</msg>
+<msg time="2024-01-31T15:55:22.333334" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
