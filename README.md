@@ -1,5 +1,5 @@
-**Android Automation Test with Robot Framework and Appium**
-<br> Android UI Automaton Test with Robot Framework and Appium
+# Android Automation Test with Robot Framework and Appium
+Android UI Automaton Test with Robot Framework and Appium
 
 **=> How To Run**
 <br> -> Install App from this repo (https://github.com/fghilmany/Easy-Diet-App)
